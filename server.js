@@ -20,21 +20,18 @@ let transport = nodemailer.createTransport({
 })
 
 app.post('/sendEmail', (req, res) => {
-
     let email = {
         from: req.body.email,
         to: 'xxxxx', //destiny email
         subject: 'Assunto',
         html: req.body.message
     }
-
     transport.sendMail(email, (err, info) => {
         if (err) {
             throw console.log(err.message);
         }
         console.log('email enviado')
     })
-
     res.send(req.body);
 })
 
