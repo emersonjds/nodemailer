@@ -1,0 +1,14 @@
+{
+  "name": "servermailer",
+  "version": "1.0.0",
+  "description": "Mailer Server",
+  "main": "index.js",
+  "author": "Emerson Jr",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.7"
+  }
+}
